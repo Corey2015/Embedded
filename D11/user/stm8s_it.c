@@ -23,7 +23,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm8s_it.h"
-#include "led.h"
+
 
 /** @addtogroup Template_Project
   * @{
@@ -124,6 +124,7 @@ INTERRUPT_HANDLER(EXTI_PORTB_IRQHandler, 4)
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
+  CHARGE_handler();
 }
 
 /**
@@ -136,7 +137,7 @@ INTERRUPT_HANDLER(EXTI_PORTC_IRQHandler, 5)
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
-  interrupt_handle();
+  Wake_handler();
 }
 
 /**
@@ -225,6 +226,9 @@ INTERRUPT_HANDLER(TIM1_UPD_OVF_TRG_BRK_IRQHandler, 11)
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
+  TIME_handler();
+  TIM1_ClearITPendingBit(TIM1_IT_UPDATE);
+  
 }
 
 /**
@@ -275,6 +279,8 @@ INTERRUPT_HANDLER(TIM1_CAP_COM_IRQHandler, 12)
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
+   TIM2_handler();
+   TIM2_ClearITPendingBit(TIM2_IT_UPDATE);
  }
 
 /**
@@ -467,6 +473,9 @@ INTERRUPT_HANDLER(TIM6_UPD_OVF_TRG_IRQHandler, 23)
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
+   TIM4_handler();
+   TIM4_ClearITPendingBit(TIM4_IT_UPDATE);
+   
  }
 #endif /*STM8S903*/
 

@@ -35,11 +35,16 @@ enum{
 
 /*functions*/
 void FINGER_init(void);
-void FINGER_on(void);
-void FINGER_off(void);
+void FINGER_open(void);
+void FINGER_close(void);
 void FINGER_abort(void);
-void FINGRT_getnum(void);
-void FINGRT_verify(void);
-void FINGRT_enroll_again(void);
-void FINGRT_enroll_first(void);
+void FINGER_getnum(void);
+void FINGER_getadmin(void);
+void FINGER_verify(void);
+void FINGER_verify_admin(void);
+void FINGER_enroll_again(void);
+void FINGER_enroll_first(void);
+void FINGER_enroll_admin_again(void);
+void FINGER_enroll_admin_first(void);
+void FINGER_delete(void);
 #endif

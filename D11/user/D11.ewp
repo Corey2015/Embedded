@@ -1592,13 +1592,25 @@
   <group>
     <name>driver</name>
     <file>
+      <name>$PROJ_DIR$\..\driver\delay.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\driver\finger.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\driver\Key.c</name>
+      <name>$PROJ_DIR$\..\driver\key.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\driver\led.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\driver\lockctr.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\driver\power.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\driver\time.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\driver\uart.c</name>
@@ -1614,6 +1626,15 @@
     </file>
     <file>
       <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_gpio.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_tim1.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_tim2.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_tim4.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\STM8S_StdPeriph_Driver\src\stm8s_uart1.c</name>

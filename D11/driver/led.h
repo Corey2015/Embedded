@@ -16,4 +16,8 @@ void LED_init(void);
 
 void LED_open(u8 led);
 void LED_close(u8 led);
+void LED_blue_on(void);
+void LED_red_on(void);
+void LED_flash(void);
+void LED_blue_flash(void);
 #endif
