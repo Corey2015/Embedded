@@ -6,6 +6,7 @@ void UART_init(void){
   //÷–∂œ…Ë÷√
   UART1_ITConfig(UART1_IT_RXNE_OR, ENABLE);
   UART1_Cmd(ENABLE);
+  
 }
 
 void UART_send_byte(uint8_t data){

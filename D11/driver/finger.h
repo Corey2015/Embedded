@@ -21,7 +21,7 @@
 
 //指令
 enum{
-	CMD_TERMINATE     = 0X00,//终止
+	CMD_ABORT         = 0X00,//终止
 	CMD_SYS_CONFIG    = 0X01,//查询指纹数量
 	CMD_MATCH_FP 	  = 0X04,//指纹比对
 	CMD_DELETE_FP     = 0X05,//删除指纹
@@ -47,4 +47,6 @@ void FINGER_enroll_first(void);
 void FINGER_enroll_admin_again(void);
 void FINGER_enroll_admin_first(void);
 void FINGER_delete(void);
+void FINGER_timeout(void);
+void FINGER_set_finger_on_time(void);
 #endif

@@ -19,6 +19,9 @@
   <group>
     <name>driver</name>
     <file>
+      <name>$PROJ_DIR$\..\driver\charge.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\..\driver\delay.c</name>
     </file>
     <file>
@@ -32,9 +35,6 @@
     </file>
     <file>
       <name>$PROJ_DIR$\..\driver\lockctr.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\driver\power.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\driver\time.c</name>

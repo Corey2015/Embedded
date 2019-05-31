@@ -13,7 +13,7 @@
 
 /*functions*/
 void LED_init(void);
-
+void LED_reverse(void);
 void LED_open(u8 led);
 void LED_close(u8 led);
 void LED_blue_on(void);
